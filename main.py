@@ -58,12 +58,12 @@ while True:
         print(pembatas)
         break
 
-    elif pilihan in ['1','2','3','4','5'.'6']:
+    elif pilihan in ['1','2','3','4','5','6']:
         operasi = operator(pilihan)
         print(pembatas)
-        print(f"Hasil: {Kalkulator(operasi)}")
+        print(f"Hasil: {kalkulator(operasi)}")
         print(pembatas)
-         input("Tekan ENTER untuk mencoba lagi...")
+        input("Tekan ENTER untuk mencoba lagi...")
 
     else:
         print(pembatas)
