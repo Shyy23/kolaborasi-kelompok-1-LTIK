@@ -4,14 +4,32 @@ RPL Kelas 1C
 
 Kalkulator Sederhana
 """
+import operator as op
 
 # Variabel Global
 pembatas = "="*30
 
 # Fungsi Operator
+def operator(pilihan):
+    if pilihan == 1:
+        return op.add
+    elif pilihan == 2:
+        return op.sub
+    elif pilihan == 3:
+        return op.mul
+    elif pilihan == 4:
+        return op.truediv
+    elif pilihan == 5:
+        return op.mod
+    elif pilihan == 6:
+        return op.pow
 
 # Fungsi Kalkulator
-
+def kalkulator(operator):
+    angka1 = int(input("Masukkan Angka Pertama: "))
+    angka2 = int(input("Masukkan Angka Kedua: "))
+    hasil = operator(angka1, angka2)
+    return hasil
 
 # Sistem Kalkulator Sederhana 
 
