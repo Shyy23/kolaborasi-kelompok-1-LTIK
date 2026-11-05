@@ -25,7 +25,11 @@ def operator(pilihan):
         return op.pow
 
 # Fungsi Kalkulator
-
+def kalkulator(operator):
+    angka1 = int(input("Masukkan Angka Pertama: "))
+    angka2 = int(input("Masukkan Angka Kedua: "))
+    hasil = operator(angka1, angka2)
+    return hasil
 
 # Sistem Kalkulator Sederhana 
 
