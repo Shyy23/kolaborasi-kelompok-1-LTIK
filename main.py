@@ -50,15 +50,15 @@ print("7. Keluar")
 
 # Logika Kalkulator
 while True:
-    pilihan = input("Masukan pilihan no menu (1-7) diatas: ")
+    pilihan = int(input("Masukan pilihan no menu (1-7) diatas: "))
 
-    if pilihan == '7':
+    if pilihan == 7:
         print(pembatas)
         print("Terimakasih & Sampai Jumpa!")
         print(pembatas)
         break
 
-    elif pilihan in ['1','2','3','4','5','6']:
+    elif pilihan in [1,2,3,4,5,6]:
         operasi = operator(pilihan)
         print(pembatas)
         print(f"Hasil: {kalkulator(operasi)}")
